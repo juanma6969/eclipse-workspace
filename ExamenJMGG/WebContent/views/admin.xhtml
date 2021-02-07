@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body>
+<h:form>
+		<h3>Pagina Admin, Bienvenido admin,#{usuario.usuario}}</h3>
+		<h4>Aqui el admin tendra derecho a enviar la informacion establecia para los usuarios sin permiso de admin.</h4>
+		<table>
+			<tr>
+				<td>Texto</td>
+				<td><h:inputText value="#{usuario.texto}"></h:inputText></td>
+
+			</tr> 
+			<tr>
+			<td>
+			<h5>Sirve para enviar si quieres ver el texto o no .</h5>
+			<h:commandButton value="Enviar" action="#{usuario.bSendText()}" ></h:commandButton>
+			</td>
+</tr>
+			<h5>Sirve para enviar si quieres ver el texto o no .</h5>
+<td><h:inputText value="#{usuario.act}"></h:inputText></td>
+<td> 
+<h:commandButton action="#{usuario.IsVisibleT()}" value="Activar" />
+</td>
+
+
+
+
+<td>
+<h:commandButton action="/index" value="Inicio" />
+</td>
+
+</table>
+
+</h:form>
+</body> 
+</html>

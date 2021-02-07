@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="HotelDomTt">
+		<class>model.Tconsumicion</class>
+		<class>model.Tfactura</class>
+		<class>model.TconsumicionPK</class>
+		<class>dominio.Cliente</class>
+		<class>dominio.Tconsumicion</class>
+		<class>dominio.TconsumicionPK</class>
+		<class>dominio.Tfactura</class>
+		<class>dominio.Tfoto</class>
+		<class>dominio.Thabitacion</class>
+		<class>dominio.Thotel</class>
+		<class>dominio.Tlineafactura</class>
+		<class>dominio.TlineafacturaPK</class>
+		<class>dominio.Treserva</class>
+		<class>dominio.TreservaPK</class>
+		<class>dominio.Tservicio</class>
+		<class>dominio.Ttarifa</class>
+		<class>dominio.Ttemporada</class>
+		<class>dominio.Ttipohabitacion</class>
+		<class>dominio.Ttservicio</class>
+	</persistence-unit>
+</persistence>

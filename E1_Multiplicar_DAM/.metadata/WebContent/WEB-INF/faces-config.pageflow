@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16125930043220" configfile="/E1_Multiplicar_DAM/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="562" id="pf16125930992911" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16125930992912" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="946" id="pf16125930992913" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" outlinks="pf16125981974418" inlinks="pf16125930992912 pf16125981974419" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="again.xhtml" x="122" y="178" id="pf16125931946244" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="failure.xhtml" x="122" y="946" id="pf16125931946247" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf16125981974419" inlinks="pf16125981974418" path="/failure.xhtml"/>
+  <links id="pf16125930992912" target="pf16125930992913" source="pf16125930992911" outcome="startOver"/>
+  <links id="pf16125981974418" target="pf16125931946247" source="pf16125930992913" outcome="failure"/>
+  <links id="pf16125981974419" target="pf16125930992913" source="pf16125931946247" outcome="failure"/>
+</pageflow:Pageflow>

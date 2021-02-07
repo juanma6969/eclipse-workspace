@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+    version="2.3">
+
+<application>
+
+  <locale-config>
+
+   <!-- especificamos que nuestro formateo debe ser de Paraguay,
+10
+    ej: separador de miles, Hora etc. -->
+
+   <default-locale>es_ES</default-locale>
+
+  </locale-config>
+
+ </application>
+
+</faces-config>

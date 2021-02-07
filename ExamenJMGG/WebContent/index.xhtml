@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      > 
+
+<h:head>Examen Juan Manuel Gómez Gutierrez</h:head> 
+<h:body> 
+<h:form>
+		<h3>Ingresar usuario y password Y rol</h3>
+		<h4>Si no ingresa ni usuario ni password se dara por hecho que es un usuario sin licencias.</h4>
+		<table>
+			<tr>
+				<td>Usuario</td>
+				<td><h:inputText value="#{usuario.usuario}"></h:inputText></td>
+
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td>
+				<h:inputSecret value="#{usuario.password}" />
+			
+				</td>
+				
+				
+				
+			</tr>
+			<tr>
+			<td>Introduzca Rol:
+			</td>
+			<td><h:inputSecret value="#{usuario.rol}" />
+			</td>
+			</tr>
+			<td>
+			
+			<h:commandButton value="Entrar" action="#{usuario.bLogin()}"  ></h:commandButton>
+		</td>
+		</table>
+	</h:form>
+</h:body> 
+</html>
